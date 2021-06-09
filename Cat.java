@@ -25,6 +25,7 @@ public class Cat {
     }
 
     public  void eat(Plate pl, boolean satiety) { // Зачем в параметре satiety? Эта переменная уже есть в классе.
+        //Если кот уже сытый? У вас нет на это проверки, и тогда он поест и если ему не хватит он станет голодным
 
         if   (pl.decreaseFood(appetite)) {this.setSatiety(true);}
         else this.setSatiety(false); // сеттеры здесь не нужны особо, не ошибка сама по себе, но криво просто.
